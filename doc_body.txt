@@ -1,0 +1,27 @@
+DBFZ Online NA Tournaments Weekly
+
+
+Wednesday:
+Wanted DBFZ(NA + EU): {wanted_link}
+
+
+Thursday:
+COM DBFZ( US + Canada): {com_link}
+
+Online Z Warrior( NA + EU): {online_zwarrior_link}
+
+
+Friday:
+FDA(US + Canada): {fda_link}
+
+
+Saturday:
+BFNS( US + Canada): {bfns_link}
+
+Iacon {DBFZ PC} {OPEN NA}: {iacon_link}
+
+
+Sunday:
+TNS Monthly (NA Only): {tns_link}
+
+Dead Zone Circuit(NA Only): {dead_zone_link}
