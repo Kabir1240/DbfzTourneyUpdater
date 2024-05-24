@@ -1,6 +1,6 @@
 import requests
 import os
-
+from typing import Dict
 
 # Define the endpoint URL for the GraphQL API
 url = "https://api.start.gg/gql/alpha"
@@ -12,7 +12,14 @@ headers = {
 }
 
 
-def get_tournaments_by_owner(user_id, per_page=10):
+def get_tournaments_by_owner(user_id, per_page=10) -> Dict:
+    """
+    retrieves all tournaments run by a certain user on start.gg
+    :param user_id: tourney owners user id
+    :param per_page: maximum number of tournies
+    :return: Dictionary containing details of the tournaments
+    """
+
     # Define the GraphQL query
     query = """
     query TournamentsByOwner($perPage: Int!, $ownerId: ID!) {
@@ -56,7 +63,13 @@ def get_tournaments_by_owner(user_id, per_page=10):
         print(response.text)
 
 
-def get_user_id(user_slug):
+def get_user_id(user_slug) -> int:
+    """
+    when given a user slug, returns the user id
+    :param user_slug: url slug of user, for example: user/e7815354
+    :return: user id
+    """
+
     # Define the GraphQL query to fetch the owner's information
     # Note: Adjust the query fields according to the actual API documentation
     query = """
@@ -95,7 +108,14 @@ def get_user_id(user_slug):
         print(response.text)
 
 
-def get_tourney_details(slug):# Construct the GraphQL query
+def get_tourney_details(slug) -> Dict:
+    """
+    when given a tournament slug, returns details about the tournament
+    :param slug: url handle for tournament, for example: tournament/city-of-mayhem-3-tekken-8
+    :return: dictionary containing tourney details
+    """
+
+    # Construct the GraphQL query
     query = """
     query TournamentDetails($slug: String!) {
         tournament(slug: $slug) {
@@ -122,8 +142,7 @@ def get_tourney_details(slug):# Construct the GraphQL query
     response = requests.post(url, json={"query": query, "variables": variables}, headers=headers)
 
     if response.status_code == 200:
-        data = response.json()
-        return data
+        return response.json()
     else:
         print(f"Failed to fetch data: {response.status_code}")
         print(response.text)

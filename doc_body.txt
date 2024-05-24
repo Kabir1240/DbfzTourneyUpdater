@@ -1,27 +1,41 @@
 DBFZ Online NA Tournaments Weekly
 
-
 Wednesday:
-Wanted DBFZ(NA + EU): {wanted_link}
+Wanted DBFZ(NA + EU)
+Hosted by Damascus. Start Time: 6PM CEST/12PM EST
+{wanted_link}
 
 
 Thursday:
-COM DBFZ( US + Canada): {com_link}
+Online WarriorZ (NA/EU Allowed,PC) 
+Hosted by TyrantUK. Start Time: 10AM PST/1PM EST/6PM UK/7PM CET
+{online_zwarrior_link}
 
-Online Z Warrior( NA + EU): {online_zwarrior_link}
+COM (NA/Canda,PC) 
+Hosted By Bum1six3. Start Time: 8PM EST 
+{com_link}
 
 
 Friday:
-FDA(US + Canada): {fda_link}
+FighterZ Duel Academy (NA/Canada,PC) 
+Hosted By NeoJudai. Start Time: 8PM EST 
+{fda_link}
 
 
 Saturday:
-BFNS( US + Canada): {bfns_link}
+BFNS (NA/Canda and EU ALTERNATES WEEKLY, PC)
+Hosted By Lindsey and TheNamesNap in this Discord. Start Time: 2PM EST 
+{bfns_link}
 
-Iacon {DBFZ PC} {OPEN NA}: {iacon_link}
+IACON (NA,PC) 
+Hosted By Rodimus Prime Start Time: 8PM EST
+{iacon_link}
 
 
 Sunday:
-TNS Monthly (NA Only): {tns_link}
+TNS Monthly (NA Only,PC) 
+Hosted by Tampa Never Sleeps 
+{tns_link}
 
-Dead Zone Circuit(NA Only): {dead_zone_link}
+Dead Zone Circuit (NA Only,PC) 
+Hosted by KingLordBeerus {dead_zone_link}

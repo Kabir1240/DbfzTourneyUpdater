@@ -1,4 +1,4 @@
-from startgg_functions import get_user_id, get_tournaments_by_owner, get_tourney_details
+from startgg_functions import get_tournaments_by_owner
 from update_google_doc import upload_doc
 from owner_ids import *
 
@@ -11,7 +11,11 @@ with open(MESSAGE_PATH, 'r') as file:
     doc_body = file.read()
 
 
-def update_com_link():
+def update_com_link() -> None:
+    """
+    gets link for the upcoming city of mayhem event that week and updates the doc_body
+    :return: None
+    """
     global doc_body
 
     tournies = get_tournaments_by_owner(BUM_ID)
@@ -26,7 +30,11 @@ def update_com_link():
     print(f"updating City Of Mayhem link {com_link}")
 
 
-def update_wanted_link():
+def update_wanted_link() -> None:
+    """
+    gets link for the upcoming wanted event that week and updates the doc_body
+    :return: None
+    """
     global doc_body
 
     tournies = get_tournaments_by_owner(DAMASCUS_ID)
@@ -41,7 +49,12 @@ def update_wanted_link():
     print(f"Updating Wanted link: {wanted_link}")
 
 
-def update_zwarrior_link():
+def update_zwarrior_link() -> None:
+    """
+    gets link for the upcoming Online Warrior Z event that week and updates the doc_body
+    :return: None
+    """
+
     global doc_body
 
     tournies = get_tournaments_by_owner(TYRANT_ID)
@@ -55,7 +68,12 @@ def update_zwarrior_link():
     print(f"updating Online WarriorZ link: {zwarrior_link}")
 
 
-def update_fda_link():
+def update_fda_link() -> None:
+    """
+    gets link for the upcoming FighterZ Duel Academy that week and updates the doc_body
+    :return: None
+    """
+
     global doc_body
 
     tournies = get_tournaments_by_owner(NEO_JUDAI_ID)
@@ -70,7 +88,11 @@ def update_fda_link():
     print(f"Updating FighterZ Duel Academy Link: {fda_link}")
 
 
-def update_bfns_link():
+def update_bfns_link() -> None:
+    """
+    gets link for the upcoming Battle for Ningen Supremacy event that week and updates the doc_body
+    :return: None
+    """
     global doc_body
 
     tournies = get_tournaments_by_owner(LINDSEY_ID)
@@ -85,7 +107,12 @@ def update_bfns_link():
     print(f"Updating Battle for Ningen Supremacy Link: {bfns_link}")
 
 
-def update_iacon_link():
+def update_iacon_link() -> None:
+    """
+    gets link for the upcoming Iacon that week and updates the doc_body
+    :return: None
+    """
+
     global doc_body
 
     tournies = get_tournaments_by_owner(DION_ID)
@@ -100,7 +127,12 @@ def update_iacon_link():
     print(f"Updating Iacon link: {iacon_link}")
 
 
-def update_tns_link():
+def update_tns_link() -> None:
+    """
+    gets link for the upcoming Tampa Never Sleeps event that week and updates the doc_body
+    :return: None
+    """
+
     global doc_body
 
     tournies = get_tournaments_by_owner(TNS_ID, 50)
@@ -114,7 +146,12 @@ def update_tns_link():
     print(f"Updating Tampa Never Sleeps link: {tns_link}")
 
 
-def update_dead_zone_link():
+def update_dead_zone_link() -> None:
+    """
+    gets link for the upcoming dead zone circuit event that week and updates the doc_body
+    :return: None
+    """
+
     global doc_body
 
     tournies = get_tournaments_by_owner(LORD_BEERUS_ID)

@@ -12,6 +12,12 @@ SCOPES = ['https://www.googleapis.com/auth/documents']
 DOCUMENT_ID = '1MzH4hoyyOq-lQf4sjPSWQBa8XFeV6wPiFwnbv4EsYKs'
 
 def authenticate():
+    """
+    Authenticates google credentials from credentials.json Requires a one time login to google. Creates token.json to
+    store authentication.
+    :return: credentials
+    """
+
     creds = None
     # The file token.json stores the user's access and refresh tokens, and is created
     # automatically when the authorization flow completes for the first time.
@@ -30,7 +36,14 @@ def authenticate():
     return creds
 
 
-def clear_document(service, document_id):
+def clear_document(service, document_id:str) -> None:
+    """
+    clears google document completely
+    :param service: resource for interacting with google docs API
+    :param document_id: document id str
+    :return: None
+    """
+
     # Retrieve the document to get the current content length
     document = service.documents().get(documentId=document_id).execute()
     doc_content_length = document.get('body').get('content')[-1]['endIndex']
@@ -53,7 +66,15 @@ def clear_document(service, document_id):
         print("Document is already empty.")
 
 
-def update_document(service, document_id, message):
+def update_document(service, document_id:str, message:str) -> None:
+    """
+    writes a message to a google doc
+    :param service:  Resource for interacting with an API
+    :param document_id: document id
+    :param message: message to write to document
+    :return: None
+    """
+
     requests = [
         {
             'insertText': {
@@ -68,7 +89,15 @@ def update_document(service, document_id, message):
         documentId=document_id, body={'requests': requests}).execute()
     print(f'Updated the document: {result}')
 
-def upload_doc(message):
+
+def upload_doc(message:str) -> None:
+    """
+    Clears google doc and writes a message to it.
+    :param message: message to write
+    :return: None
+    """
+
+    # authenticate credentials
     creds = authenticate()
     service = build('docs', 'v1', credentials=creds)
 
