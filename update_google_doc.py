@@ -90,10 +90,11 @@ def update_document(service, document_id:str, message:str) -> None:
     print(f'Updated the document: {result}')
 
 
-def upload_doc(message:str) -> None:
+def upload_doc(message:str, clear:bool=True) -> None:
     """
     Clears google doc and writes a message to it.
     :param message: message to write
+    :param clear: set to True if you want to clear the document before uploading. True by default.
     :return: None
     """
 
@@ -101,9 +102,9 @@ def upload_doc(message:str) -> None:
     creds = authenticate()
     service = build('docs', 'v1', credentials=creds)
 
-    # clear doc
-    clear_document(service, DOCUMENT_ID)
+    if clear:
+        # clear doc
+        clear_document(service, DOCUMENT_ID)
 
     # Update the document
     update_document(service, DOCUMENT_ID, message)
-
