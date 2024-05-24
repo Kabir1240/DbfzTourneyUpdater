@@ -123,7 +123,7 @@ def update_iacon_link() -> None:
             iacon_link = tourney["slug"]
             break
 
-    doc_body = doc_body.replace("{iacon_link}", f"{iacon_link}")
+    doc_body = doc_body.replace("{iacon_link}", f"{STARTGG_URL}{iacon_link}")
     print(f"Updating Iacon link: {iacon_link}")
 
 
