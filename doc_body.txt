@@ -3,39 +3,55 @@ DBFZ Online NA Tournaments Weekly
 Wednesday:
 Wanted DBFZ(NA + EU)
 Hosted by Damascus. Start Time: 6PM CEST/12PM EST
-{wanted_link}
+twitter: https://x.com/zDamascus
+twitch: https://www.twitch.tv/zdamascus
+upcoming tourney: {wanted_link}
 
 
 Thursday:
 Online WarriorZ (NA/EU Allowed,PC) 
 Hosted by TyrantUK. Start Time: 10AM PST/1PM EST/6PM UK/7PM CET
-{online_zwarrior_link}
+twitter: https://x.com/Tyrant_UK
+twitch: https://www.twitch.tv/tyrant_uk
+upcoming tourney: {online_zwarrior_link}
 
 COM (NA/Canada,PC) 
-Hosted By Bum1six3. Start Time: 8PM EST 
-{com_link}
+Hosted By Bum1six3. Start Time: 8PM EST
+twitter: https://x.com/bum163
+twitch: https://www.twitch.tv/bum1six3
+upcoming tourney: {com_link}
 
 
 Friday:
 FighterZ Duel Academy (NA/Canada,PC) 
-Hosted By NeoJudai. Start Time: 8PM EST 
-{fda_link}
+Hosted By NeoJudai. Start Time: 8PM EST
+twitter: https://x.com/NeoJudai
+twitch: https://www.twitch.tv/neojudai
+upcoming tourney: {fda_link}
 
 
 Saturday:
 BFNS (NA/Canada and EU ALTERNATES WEEKLY, PC)
-Hosted By Lindsey and TheNamesNap in this Discord. Start Time: 2PM EST 
-{bfns_link}
+Hosted By Lindsey and TheNamesNap in this Discord. Start Time: 2PM EST
+twitch: https://www.twitch.tv/neojudai
+upcoming tourney: {bfns_link}
 
 IACON (NA,PC) 
 Hosted By Rodimus Prime Start Time: 8PM EST
-{iacon_link}
+twitter: https://x.com/Rodimus51795126
+twitch: https://www.twitch.tv/rodimusprime1986
+upcoming tourney: {iacon_link}
 
 
 Sunday:
 TNS Monthly (NA Only,PC) 
-Hosted by Tampa Never Sleeps 
-{tns_link}
+Hosted by Tampa Never Sleeps
+twitter: https://x.com/TampaNeverSleep
+twitch: https://www.twitch.tv/tampaneversleeps 
+upcoming tourney: {tns_link}
 
 Dead Zone Circuit (NA Only,PC) 
-Hosted by KingLordBeerus {dead_zone_link}
+Hosted by KingLordBeerus 
+twitter: https://x.com/King_LordBeerus
+twitch: https://www.twitch.tv/king_lord_beerus
+upcoming tourney: {dead_zone_link}
