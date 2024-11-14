@@ -13,26 +13,30 @@ DOCUMENT_ID = '1MzH4hoyyOq-lQf4sjPSWQBa8XFeV6wPiFwnbv4EsYKs'
 
 def authenticate():
     """
-    Authenticates google credentials from credentials.json Requires a one time login to google. Creates token.json to
-    store authentication.
+    Authenticates Google credentials from credentials.json. Requires a one-time login to Google.
+    Automatically refreshes the token if expired and creates/updates token.json to store authentication details.
+
     :return: credentials
     """
-
     creds = None
-    # The file token.json stores the user's access and refresh tokens, and is created
-    # automatically when the authorization flow completes for the first time.
+    # Check if token.json exists to load access and refresh tokens
     if os.path.exists('token.json'):
         creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-    # If there are no (valid) credentials available, let the user log in.
+
+    # If no (valid) credentials are available, or if they need to be refreshed
     if not creds or not creds.valid:
+        # If credentials have expired but there's a refresh token, refresh the access token
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
+            # If no valid credentials or refresh token exists, initiate the login flow
             flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
-        # Save the credentials for the next run
-        with open('token.json', 'w') as token:
-            token.write(creds.to_json())
+        
+        # Save or update the credentials in token.json for future sessions
+        with open('token.json', 'w') as token_file:
+            token_file.write(creds.to_json())
+    
     return creds
 
 
